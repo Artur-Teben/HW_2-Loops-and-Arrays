@@ -8,16 +8,15 @@ public class Main {
         OperationsWithArray operationsWithArray = new OperationsWithArray();
         int[] firstArray = new int[20];
 
-
         int[] secondArray = {3, 2, 3, 1, 4, 2, 8, 3};
 
-        String [][] stringArray = {
+        String[][] stringArray = {
                 {"Just ", "dream", "sport"},
                 {"life", "Do ", "music"},
                 {"relax", "codding", "It!"}
         };
 
-        System.out.println("              Operatins with first array.           ");
+        System.out.println("\t\t\tOperatins with first array.\t\t\t");
         System.out.print("Initialization of array: ");
         firstArray = operationsWithArray.initArray(firstArray);
 
@@ -31,15 +30,15 @@ public class Main {
         operationsWithArray.decBubbleSort(firstArray);
 
         System.out.print("Elevation to the square of the elements of the array: ");
-        operationsWithArray.getSquareElemArray(firstArray);
-        System.out.println("");
+        operationsWithArray.squareArray(firstArray);
+        System.out.println();
 
-        System.out.println("              Operatins with second array.           ");
+        System.out.println("\t\t\tOperatins with second array.\t\t\t");
         System.out.print("Check items for duplication: ");
         operationsWithArray.swapToZero(secondArray);
-        System.out.println("");
+        System.out.println();
 
-        System.out.println("              Operatins with matrix.           ");
+        System.out.println("\t\t\tOperatins with matrix.\t\t\t");
         System.out.println("Main diagonal of matrix: " + operationsWithArray.getMainDiagonalString(stringArray));
     }
 }

@@ -20,12 +20,10 @@ public class OperationsWithArray {
     // Getting minimum element of array
     public int getMinElemArray (int[] list) {
         int minValue = list[0];
-        int minIndex = 0;
 
-        for (int i=1; i < list.length; i++) {
-            if (minValue > list[i]) {
-                minValue = list[i];
-                minIndex = i;
+        for (int elem: list) {
+            if (minValue > elem) {
+                minValue = elem;
             }
         }
         return minValue;
@@ -34,14 +32,11 @@ public class OperationsWithArray {
     // Getting maximum element of array
     public int getMaxElemArray (int[] list) {
         int maxValue = list[0];
-        int maxIndex = 0;
 
-        for (int i=1; i < list.length; i++) {
+        for (int elem: list) {
 
-            if (maxValue < list[i]) {
-                maxValue = list[i];
-                maxIndex = i;
-
+            if (maxValue < elem) {
+                maxValue = elem;
             }
         }
         return maxValue;
@@ -59,8 +54,8 @@ public class OperationsWithArray {
                 }
             }
         }
-        for (int k = 0; k < list.length; k++) {
-            System.out.print(list[k] + " ");
+        for (int elem: list) {
+            System.out.print(elem + " ");
         }
         System.out.println("");
         return list;
@@ -78,8 +73,8 @@ public class OperationsWithArray {
                 }
             }
         }
-        for (int k = 0; k < list.length; k++) {
-            System.out.print(list[k] + " ");
+        for (int elem: list) {
+            System.out.print(elem + " ");
         }
         System.out.println("");
         return list;
@@ -88,17 +83,17 @@ public class OperationsWithArray {
     // The sum of all elements of the array
     public int sumArray (int[] list) {
         int sum = 0;
-        for (int i = 0; i < list.length; i++) {
-            sum += list[i];
+        for (int elem: list) {
+            sum += elem;
         }
         return sum;
     }
 
     // Squaring all the elements of the array
-    public int[] getSquareElemArray (int[] list) {
-        for (int i = 0; i < list.length; i++) {
-            list[i] *= list[i];
-            System.out.print(list[i] + " ");
+    public int[] squareArray (int[] list) {
+        for (int elem: list) {
+            elem *= elem;
+            System.out.print(elem + " ");
         }
         return list;
     }
@@ -126,8 +121,8 @@ public class OperationsWithArray {
             }
         }
 
-        for (int i = 0; i < list.length; i++) {
-            System.out.print(list[i] + " ");
+        for (int i : list) {
+            System.out.print(i + " ");
         }
         return list;
     }
