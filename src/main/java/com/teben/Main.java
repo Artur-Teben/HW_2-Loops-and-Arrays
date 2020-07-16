@@ -1,6 +1,7 @@
 package main.java.com.teben;
 // Author: Artur Teben
-// June 22, 2020
+// Date: June 22 2020
+// E-mail: teben.artur99@gmail.com
 public class Main {
 
     public static void main(String[] args) {
